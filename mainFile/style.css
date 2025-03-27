@@ -1,0 +1,550 @@
+body
+{
+	margin: 0px;
+    color:black;
+   font-family: arial;
+}
+.navbar
+{
+	height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-logo
+{
+	background-repeat: no-repeat;
+   
+    height: 22px;
+    width:121px;
+    padding:0px 6px 16px 10px;
+}
+.logo
+{
+	  background-image: url(images/RE1Mu3b.png);
+	  height:23px;
+	  width:108px;
+	  background-size: cover;
+      margin-top: 5px;
+      cursor: pointer;
+}
+
+.nav-menu
+{
+	color: #262626;
+	padding:14px 8px 10px;
+	font-size: 13px;
+	margin: 1px 0px 0px;
+	text-decoration: none;
+}
+.nav-menu:hover
+{
+	text-decoration: underline;
+}
+.nav-select
+{
+	height:17px;
+	margin-left: 400px;
+	margin-top: 20px;
+	margin-right: 0px;
+	padding: 0px 10px 16px 15px;
+
+}
+.nav-icon
+{
+	height:3rem;	
+    width: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.all
+{
+	font-size: 13px;
+	text-decoration: none;
+}
+.all:hover
+{
+	text-decoration: underline;
+}
+#round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border: solid 1px black;
+    border-radius: 50%;
+    margin-left: 1rem;
+	cursor: pointer;
+}
+#option
+{
+    border: none;
+}
+#icon {
+	color: black;
+	cursor: pointer;
+	position: relative;
+    margin-left: 1rem;
+}
+#search {
+	visibility: hidden;
+	background-color: rgb(255, 255, 255);
+	color: rgb(48, 48, 48);
+	font-size: 9px;
+	width: 130px;	
+	height: 12px;
+	box-shadow:  2px 1px 5px  rgb(90, 90, 90);
+	padding: 5px;
+	text-align: center;
+	padding-top: 10px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-100%);
+	white-space: nowrap;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+#cart {
+	visibility: hidden;
+	background-color: rgb(255, 255, 255);
+	color: rgb(48, 48, 48);
+	font-size: 9px;
+	width: 130px;	
+	height: 12px;
+	box-shadow:  2px 1px 5px  rgb(90, 90, 90);
+	padding: 5px;
+	text-align: center;
+	padding-top: 10px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-100%);
+	white-space: nowrap;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+#icon:hover #search {
+	visibility: visible;
+	opacity: 1;
+}
+#icon:hover #cart {
+	visibility: visible;
+	opacity: 1;
+}
+
+
+.content
+{
+	background-image: url("images/menu.avif");
+	height: 600px;
+}
+@media screen and (max-width: 600px) {
+	.content {
+		background-image: url("images/peMenu.avif");
+		background-image: cover;
+		height: 600px;
+	}
+	
+}
+
+#slide-div {
+	display: flex;
+	margin-top:30px;
+	justify-content: center;
+	align-items: center;
+	
+}
+#main 
+{
+	margin-top:70px;   
+    height: 490px;
+}
+
+#wrapper
+{
+    height: 500px;
+	display: flex;
+	justify-content: space-evenly;
+	margin-left: 50px;
+
+}
+@media screen and (max-width: 600px) {
+	#wrapper {
+		display: block;
+	}
+	#box {
+		margin-top: 40px;
+	}
+}
+#middle
+{
+	
+	width:auto;
+    padding: 0px 12px;
+}
+
+#box
+{
+	box-shadow: 1px 1px 10px  lightgray;
+	height: 480px;
+	width: 290px;
+	cursor: pointer;
+}
+
+#middle-image
+{   
+	background-image:url(images/card1.avif);
+	width:290px;
+	height: 150px;
+
+	background-size: cover;
+	
+}
+#card-text
+{
+	min-height: 200px;
+	width:258px;
+	padding: 24px 24px 0px;
+}
+#text
+{
+	font-size:24px;
+	font:bold;
+}
+#card-base
+{
+	padding:0px 0px 0px 20px;
+	width:249px;
+	height:86px;
+	margin-left: 0px;
+}
+#cart-button {
+	display: flex;
+
+}
+#button
+{
+	padding:8px 12px;
+	border-radius:2px;
+	border: none;	
+	height:30px;
+	width: 120px;
+	color:#ffffff;
+	background-color:#0067b8;
+	font-weight: bolder;
+	cursor: pointer;
+}
+#button:hover {
+	background-color: #0053a6;
+}
+#button2:hover {
+	background-color: #0053a6;
+}
+#cart-btn:hover {
+	background-color: #f5f5f5;
+
+}
+#cart-btn
+{
+	padding:7px 12px;
+	border-radius:2px;
+	margin-top: 9px;
+	border: solid 1px #bebebe;	
+	height:30px;
+	width: 244px;
+	color:#000000;
+	background-color:#ffffff;
+	font-weight: bolder;
+	cursor: pointer;
+}
+#card-a
+{
+	font-weight: 600;
+	color:#0067b8;
+	
+}
+#middle2
+{
+	height:505;
+	width:auto;
+    padding: 0px 12px;	
+}
+#box2
+{
+	box-shadow: 0px 0px 5px  lightgray;
+	height: 480px;
+	width: 290px;
+	cursor : pointer;
+}
+#middle-image2
+{
+    background-image: url(images/card2.webp);
+	width:290px;
+	height: 150px;
+    background-size: cover;
+   
+}
+#card-text2
+{
+	min-height:210px;
+	width:258px;
+	padding: 24px 24px 0px;
+}
+#text2
+{
+	font-size:24px;
+	font:bold;
+
+}
+#card-button2 {
+	display: flex;
+}
+#button2
+{
+	padding:8px 12px;
+	border-radius:2px;
+	border: none;	
+	height:30px;
+	width: 145px;
+	margin-right: 5px;
+	color:#ffffff;
+	background-color:#0067b8;
+	font-weight: bolder;
+	cursor: pointer;
+}
+#card-base2
+{
+	padding: 0px 0px 0px 24px;
+	width:249px;
+	height:96px;
+	margin-left: 0px;
+}
+
+#middle-image3
+{
+    background-image: url(images/card3.avif);
+	width:290px;
+	height: 150px;
+    background-size: cover;
+   
+}
+#middle-image4
+{
+    background-image: url(images/card5.avif);
+    width:290px;
+	height: 150px;
+    background-size: cover;
+   
+}
+.sec-menu
+{
+	background-image: url(images/menu2.avif);
+    height:540px;
+    padding: 50px;
+    margin-top: 60px;
+    margin-right:56px;
+    margin-left: 30px;
+    width: 1170px ;
+    background-size: cover;
+
+}
+@media screen and (max-width: 600px) {
+	
+	.sec-menu
+	{
+		background-image: url(images/peMenu2.avif);
+		height:480px;
+		background-size: cover;
+
+	}
+
+	
+}
+#game-pass-text {
+	margin-left: 60px;
+	height: 300px;
+	width: 420px
+}
+#game-pass {
+	font-size: 2rem;
+}
+#game-pass2 {
+	font-size: 1rem;
+	font-weight: normal;
+	line-height: 25px;
+	margin: 0;
+}
+
+#business
+{
+	margin-left: 60px;
+	font-weight: bolder	;
+}
+
+#middle-image5
+{
+    background-image: url(images/card4.avif);
+	width: 290px;
+	height: 180px;
+    background-size: cover;
+   
+}
+#middle-image6
+{
+    background-image: url(images/card6.avif);
+	width: 290px;
+	height: 180px;
+    background-size: cover;
+   
+}
+#middle-image7
+{
+    background-image: url(images/card7.avif);
+	width: 290px;
+	height: 180px;
+    background-size: cover;
+   
+}
+#middle-image8
+{
+    background-image: url(images/card8.avif);
+	width: 290px;
+	height: 180px;
+    background-size: cover;  
+}
+#sec-text {
+	width: 240px;
+}
+#sec-button
+{
+	padding:10px 12px;
+	border-radius:2px;
+	border: none;
+	margin: 8px 24px 8px 0px;
+	height:38px;
+	width: 100px;
+	color:#ffffff;
+	background-color:#0067b8;
+}
+#sec-button2
+{
+	
+	border-radius:2px;
+	border: none;
+	margin: 8px 24px 8px 0px;
+	height:50px;
+	width: 200px;
+	color:#ffffff;
+	background-color:#0067b8;
+}
+
+#social
+{
+	margin-top: 130px;
+	margin-left: 60px;
+}
+#face
+{
+    color: black;
+    cursor: pointer;
+	font-size: 22px;
+	margin-left: 25px;
+}
+#back
+{
+	display: flex;
+	justify-content: flex-end;
+    padding: 10px 12px;
+  
+}
+#btn-back
+{
+	 border: none;
+	 background-color: lightgray;
+	 height: 43px;
+	 width: 145px;
+     font-weight: bold;
+     font-size: 0.9rem;
+}
+#btn-back:hover {
+    background-color: white;
+    border: solid 1px black;
+}
+
+#game-pass
+{
+	text-align: left;
+	color: #ffffff;
+	width: 370px;
+	margin-top: 70px;
+}
+#game-pass2
+{
+	text-align: left;
+	color: #ffffff;
+	width: 270px;
+
+}
+#game-pass3
+{
+	text-align: center;
+	color: #ffffff;
+	margin-top: 20px;
+	background-color:#0067b8;
+	border: none;
+	height:40px;
+	width: 100px;
+}
+#sec-menu2
+{
+	width: 370px;
+	text-align: left;
+	margin-left: 20px;
+	padding: 30px;
+}
+#foot
+{
+	height:400px;
+	background-color: #f5f8f5;
+    display: flex;
+   
+}
+
+#foot-list
+{
+	margin-left: 75px;
+   	padding-top: 50px;
+   	color: #6b6869;
+   
+}
+li
+{
+    cursor: pointer;
+	margin-left: -40px;
+	font-weight: 50;
+	font-size: 11px;
+	margin-top: 20px;
+    list-style-type: none;
+}
+#last-foot
+{
+	display: flex;
+	background-color: #e8e9e8;
+	padding-left: 70px;
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+#last-foot1
+{
+    font-size: 11px;
+    margin-left: 10px;
+    padding-top: 3px;
+    color: #6b6869;
+}
